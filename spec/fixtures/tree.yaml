@@ -1,6 +1,9 @@
 ---
 - :name: Campfire
   :level: 0
+  :line: 3
+  :type: o
+  :source: 'class Campfire'
 - :parent: Campfire
   :name: constructor
   :line: 7
@@ -15,6 +18,9 @@
   :level: 2
 - :name: resp
   :level: 4
+  :type: o
+  :line: 14
+  :source: '    resp ='
 - :parent: Campfire.handlers.resp
   :name: onSuccess
   :line: 15
@@ -47,6 +53,9 @@
   :level: 2
 - :name: Test
   :level: 0
+  :line:  44
+  :source: 'class Test'
+  :type: o
 - :parent: Test
   :name: bump
   :line: 45
