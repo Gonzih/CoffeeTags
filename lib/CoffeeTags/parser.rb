@@ -48,14 +48,14 @@ module Coffeetags
         if (_class = line.match @class_regex)
           @tree << {
             :name => _class[1], :level => level,
-            :source => line.chomp, :type => 'o', :line => line_n
+            :source => line.chomp, :kind => 'o', :line => line_n
           }
         end
 
         if(var = line.match @var_regex)
           @tree << {
             :name => var[1], :level => level,
-            :source => line.chomp, :type => 'o', :line => line_n
+            :source => line.chomp, :kind => 'o', :line => line_n
 
           }
         end

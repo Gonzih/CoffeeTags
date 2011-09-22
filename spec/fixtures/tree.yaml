@@ -2,7 +2,7 @@
 - :name: Campfire
   :level: 0
   :line: 3
-  :type: o
+  :kind: o
   :source: 'class Campfire'
 - :parent: Campfire
   :name: constructor
@@ -18,7 +18,7 @@
   :level: 2
 - :name: resp
   :level: 4
-  :type: o
+  :kind: o
   :line: 14
   :source: '    resp ='
 - :parent: Campfire.handlers.resp
@@ -55,7 +55,7 @@
   :level: 0
   :line:  44
   :source: 'class Test'
-  :type: o
+  :kind: o
 - :parent: Test
   :name: bump
   :line: 45

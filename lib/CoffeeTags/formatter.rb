@@ -26,7 +26,8 @@ module Coffeetags
 
     def line_to_string entry
       namespace = (entry[:parent].blank?) ? entry[:name]: entry[:parent]
-      namespace =  namespace == entry[:name] ? '' : "object:#{namespace}"
+      namespace = "object:#{namespace}"
+      namespace = '' if namespace == entry[:name]
 
       [
         entry[:name],
@@ -41,7 +42,7 @@ module Coffeetags
 
     def parse_tree
       @lines = @tree.map do | content|
-        line_to_string content if content[:kind] == 'f'
+        line_to_string content # if content[:kind] == 'f'
       end.reject{|l| l.nil? }
     end
 
